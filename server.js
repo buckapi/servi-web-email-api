@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 6000;
 
 // Middleware
 app.use(cors()); // Permite peticiones desde tu frontend
@@ -17,7 +17,7 @@ const transporter = nodemailer.createTransport({
   secure: false,
   auth: {
     user: 'contacto@servi-web.com',
-    pass: 'Serviweb2024.' // Cambia esto por la contraseña de tu correo
+    pass: '.' // Cambia esto por la contraseña de tu correo
   }
 });
 
